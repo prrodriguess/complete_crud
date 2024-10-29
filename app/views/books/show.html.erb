@@ -1,2 +1,6 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+
+<p><strong>Autor:</strong> <%= @book.author %></p>
+<p><strong>Ano de Publicação:</strong> <%= @book.publication_year %></p>
+<p><strong>Gênero:</strong> <%= @book.genre %></p>
+<%= link_to 'Editar', edit_book_path(@book) %> | 
+<%= link_to 'Voltar para Lista', books_path %>
